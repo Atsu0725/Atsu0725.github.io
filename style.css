@@ -227,7 +227,7 @@ span{
 }
 .ourStore{
     text-align:center ;
-    width:var(--max--waidthz);
+    width:var(--max--waidth);
     margin:0 auto;
 }
 .ourStore h2{
