@@ -1,0 +1,35 @@
+@media all and (max-width:600px){
+    :root{
+        --max--waidth:600px;
+    }
+    .menuContainer{
+        width:100%;
+    }
+    .aboutCoffee{
+        width:100%;
+    }
+    .hiddenText{
+        width:100%;
+    }
+    .coffeeMenu{
+        width:100%;
+    }
+    .foodOther{
+        width:100%;
+    }
+    .explainCoffee li{
+        width:25%;
+    }
+    .ourStore{
+        width:100%;
+    }
+    .mainText{
+        font-size: 72px;
+    }
+    .explainCoffee li{
+        width:100%;
+    }
+    .hiddenText{
+        width:80%;
+    }
+}
