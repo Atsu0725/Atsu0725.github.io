@@ -1,0 +1,257 @@
+@charset "UTF-8";
+
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+.open{
+    display: block;
+}
+:root{
+    --max--waidth:1000px;
+}
+/*header*/
+.headMenu{
+    display: flex;
+    justify-content:right;
+    padding-top:16px;
+    padding-right:39px;
+}
+.headMenu li{
+    margin-right:24px;
+}
+.headMenu a{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 14.4px;
+}
+header{
+    height:100vh;
+    background-image:url("/Users/atsuo/Desktop/WEB_Dev/Camp PJ No3/img/mainvisual.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 20px;
+}
+/*MainImage*/
+.mainText{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 115px;
+    font-weight: bold;
+    font-family: Arial;
+    color: #FFFFFF;
+}
+span{
+    text-shadow: 0 0 10px #12121229;
+}
+
+/*menu*/
+.imageSet{
+    height:300px;
+    background-image:url("/Users/atsuo/Desktop/WEB_Dev/Camp PJ No3/img/mainvisual.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;   
+    background-color: aqua;
+}
+.imageSet h1{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 72px;
+    font-weight: bold;
+    font-family: Arial;
+    color: #FFFFFF;
+}
+.menuContainer{
+    width:var(--max--waidth);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin:0 auto;
+    margin-bottom: 150px;
+}
+.coffeeMenu{
+    width:50%;
+    text-align: center;
+    border-right: solid 1px #12121229;
+    padding:45.5px;
+}
+.foodOther{
+    width:50%;
+}
+.menuContainer h2{
+    display: inline-block;
+    font-size:44px;
+    padding-bottom: 17px;
+    border-bottom: solid 6px #E03131;
+    margin-bottom: 70px;
+}
+.menuName{
+    text-align:left;
+    width:80%;
+    border-bottom: solid 1px #12121229;
+    color: #383E45;
+}
+.menuItself{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 29px;
+}
+.menuItself p{
+    font-size: 14.4px;
+}
+.otherMenu{
+    text-align: center;
+    border-right: solid 1px #12121229;
+    padding:45.5px;
+}
+
+/*About*/
+.about{
+    text-align: center;
+}
+.aboutCoffee{
+    width:var(--max--waidth);
+    margin:0 auto;
+}
+.aboutCoffee h2{
+    display: inline-block;
+    font-size:44px;
+    padding-bottom: 17px;
+    border-bottom: solid 6px #E03131;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+.explainCoffee{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    margin-bottom: 51px;
+}
+.explainCoffee li{
+    width:50%;
+    padding:20px 27px;
+    font-size: 14.4px;
+}
+.readMore{
+    width:160px;
+    height:50px;
+    line-height: 50px;
+    font-size: 14.4px;
+    cursor: pointer;
+    position:relative;
+    margin:0 auto;
+    margin-bottom: 20px;
+}
+.readMore span{
+    display: inline-block;
+    width:160px;
+    height:50px;
+}
+.readMore span::before{
+    position: absolute;
+    top:0;
+    left:0;
+    content: "";
+    width:2px;
+    height: 50%;
+    background:#E03131;
+    color: white;
+    transition: all 0.3s ease;
+}
+.readMore span::after{
+    position: absolute;
+    top:0;
+    left:0;
+    content: "";
+    width:50%;
+    height:2px;
+    background:#E03131;
+    color: white;
+    transition: all 0.3s ease;
+}
+.readMore::before{
+    position: absolute;
+    bottom:0;
+    right:0;    
+    content: "";
+    width:2px;
+    height: 50%;
+    background:#E03131;
+    color: white;
+    transition: all 0.3s ease;
+}
+.readMore::after{
+    position: absolute;
+    bottom:0;
+    right:0;
+    content: "";
+    width:50%;
+    height:2px;
+    background:#E03131;
+    color: white;
+    transition: all 0.3s ease;
+}
+.readMore span:hover::before{
+    height:100%;
+}
+.readMore span:hover::after{
+    width:100%;
+}
+.readMore:hover::before{
+    height:100%;
+}
+.readMore:hover::after{
+    width:100%;
+}
+.hiddenText{
+    display: none;
+    width:var(--max--waidth);
+    margin:0 auto;
+}
+
+/*Map*/
+.location{
+    margin-top: 150px;
+}
+.ourStore{
+    text-align:center ;
+    width:var(--max--waidthz);
+    margin:0 auto;
+}
+.ourStore h2{
+    display: inline-block;
+    font-size:44px;
+    padding-bottom: 17px;
+    border-bottom: solid 6px #E03131;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.ourStore iframe{
+    width:100%;
+}
+.detailLocation{
+    font-weight: normal;
+    font-family: Arial;
+    font-size: 14.4px;
+    text-align: left;
+    line-height: 24.4px;
+    color: #383E45;
+    margin-bottom: 190px;
+}
+footer{
+    text-align: center;
+    margin: 0 auto;
+}
