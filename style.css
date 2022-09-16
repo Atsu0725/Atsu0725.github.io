@@ -1,256 +1,142 @@
+@charset "utf-8";
 
-*{
-    box-sizing:border-box;
-    padding:0;
+* {
+    box-sizing: border-box;
     margin:0;
+    padding:0;
 }
-.open{
-    display: block;
-}
+
 :root{
-    --max--waidth:1000px;
+    --site-width:1140px;
 }
-/*header*/
-.headMenu{
-    display: flex;
-    justify-content:right;
-    padding-top:16px;
-    padding-right:39px;
-}
-.headMenu li{
-    margin-right:24px;
-}
-.headMenu a{
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: 14.4px;
-}
+
+/*へダーのクラス*/
 header{
+    margin: 0 auto;
+    height: 50px;
+    background-color: dimgrey;
+    color:white;
+}
+.header-container{
+    height: 50px;
+    margin: 0 auto;
+    max-width: var(--site-width);
+    display:flex;
+    justify-content: space-between;
+}
+.top_icon{
+    display:flex;
+    align-items: center;
+}
+.top_menu{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header-container h3{
+    color:white;
+    margin-left:15px;
+}
+.header-container a{
+    color:white;
+    margin-right:50px;
+}
+
+/*メインボディのクラス*/
+.main-wrapper{
     height:100vh;
-    background-image:url("/Users/atsuo/Desktop/WEB_Dev/Camp PJ No3/img/mainvisual.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
+    margin: 0 auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("port-main.jpg");
     background-size: cover;
-    position: relative;
-    margin-bottom: 20px;
-}
-/*MainImage*/
-.mainText{
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-
-    font-size: 115px;
-    font-weight: bold;
-    font-family: Arial;
-    color: #FFFFFF;
-}
-span{
-    text-shadow: 0 0 10px #12121229;
-}
-
-/*menu*/
-.imageSet{
-    height:300px;
-    background-image:url("/Users/atsuo/Desktop/WEB_Dev/Camp PJ No3/img/mainvisual.jpg");
-    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    background-attachment: fixed;   
-    background-color: aqua;
+    background-position: center;
+    color:white;
 }
-.imageSet h1{
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
+.main-container{
+    color:white;
+    margin: 0 auto;
+    text-align: center;
+}
+.main-container h1{
+    font-size:50px;
+    margin-bottom:40px;
+    text-shadow: 3px 3px 5px black;
+}
 
-    font-size: 72px;
-    font-weight: bold;
-    font-family: Arial;
-    color: #FFFFFF;
+
+/*レッスン一覧のクラス*/
+.work-wrapper{
+    margin-top:50px;
+    max-width: var(--site-width);
+    margin: 0 auto;
+    text-align:center;
+    margin-top:50px;
 }
-.menuContainer{
-    width:var(--max--waidth);
+.work-wrapper h1{
+    display: inline-block;
+    padding-bottom:10px;
+    border-bottom: solid 3px red;
+    margin-bottom: 40px;
+}
+.works{
+    margin:0 auto;
+    margin-bottom:50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.work{
+    width:254px;
+}
+.work img{
+    width:100%;
+    height:150px;
+}
+.work h2{
+    margin-top:30px;
+    margin-bottom:30px;
+    line-height:0;
+    color: black;
+}
+.work p{
+    width:254px;
+    color: black;
+    text-align: left;
+}
+.about{
+    margin:0 auto;
+    margin-bottom:50px;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.about__detail{
+    list-style:none;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin:0 auto;
-    margin-bottom: 150px;
 }
-.coffeeMenu{
-    width:50%;
-    text-align: center;
-    border-right: solid 1px #12121229;
-    padding:45.5px;
+.about__detail li{
+    width:30%;
 }
-.foodOther{
-    width:50%;
+.about__detail img{
+    width:30%;
+    border-radius: 100%;
+    border: solid 1px rgb(208, 208, 208);
 }
-.menuContainer h2{
-    display: inline-block;
-    font-size:44px;
-    padding-bottom: 17px;
-    border-bottom: solid 6px #E03131;
-    margin-bottom: 70px;
-}
-.menuName{
-    text-align:left;
-    width:80%;
-    border-bottom: solid 1px #12121229;
-    color: #383E45;
-}
-.menuItself{
-    width:100%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 29px;
-}
-.menuItself p{
-    font-size: 14.4px;
-}
-.otherMenu{
-    text-align: center;
-    border-right: solid 1px #12121229;
-    padding:45.5px;
-}
-
-/*About*/
-.about{
-    text-align: center;
-}
-.aboutCoffee{
-    width:var(--max--waidth);
-    margin:0 auto;
-}
-.aboutCoffee h2{
-    display: inline-block;
-    font-size:44px;
-    padding-bottom: 17px;
-    border-bottom: solid 6px #E03131;
-    margin-top: 50px;
-    margin-bottom: 70px;
-}
-.explainCoffee{
-    display: flex;
-    flex-wrap: wrap;
+.about__detail p{
     text-align: left;
-    margin-bottom: 51px;
 }
-.explainCoffee li{
-    width:50%;
-    padding:20px 27px;
-    font-size: 14.4px;
-}
-.readMore{
-    width:160px;
-    height:50px;
-    line-height: 50px;
-    font-size: 14.4px;
-    cursor: pointer;
-    position:relative;
-    margin:0 auto;
-    margin-bottom: 20px;
-}
-.readMore span{
-    display: inline-block;
-    width:160px;
-    height:50px;
-}
-.readMore span::before{
-    position: absolute;
-    top:0;
-    left:0;
-    content: "";
-    width:2px;
-    height: 50%;
-    background:#E03131;
-    color: white;
-    transition: all 0.3s ease;
-}
-.readMore span::after{
-    position: absolute;
-    top:0;
-    left:0;
-    content: "";
-    width:50%;
-    height:2px;
-    background:#E03131;
-    color: white;
-    transition: all 0.3s ease;
-}
-.readMore::before{
-    position: absolute;
-    bottom:0;
-    right:0;    
-    content: "";
-    width:2px;
-    height: 50%;
-    background:#E03131;
-    color: white;
-    transition: all 0.3s ease;
-}
-.readMore::after{
-    position: absolute;
-    bottom:0;
-    right:0;
-    content: "";
-    width:50%;
-    height:2px;
-    background:#E03131;
-    color: white;
-    transition: all 0.3s ease;
-}
-.readMore span:hover::before{
-    height:100%;
-}
-.readMore span:hover::after{
-    width:100%;
-}
-.readMore:hover::before{
-    height:100%;
-}
-.readMore:hover::after{
-    width:100%;
-}
-.hiddenText{
-    display: none;
-    width:var(--max--waidth);
-    margin:0 auto;
-}
-
-/*Map*/
-.location{
-    margin-top: 150px;
-}
-.ourStore{
-    text-align:center ;
-    width:var(--max--waidth);
-    margin:0 auto;
-}
-.ourStore h2{
-    display: inline-block;
-    font-size:44px;
-    padding-bottom: 17px;
-    border-bottom: solid 6px #E03131;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-.ourStore iframe{
-    width:100%;
-}
-.detailLocation{
-    font-weight: normal;
-    font-family: Arial;
-    font-size: 14.4px;
-    text-align: left;
-    line-height: 24.4px;
-    color: #383E45;
-    margin-bottom: 190px;
-}
+/*footer*/
 footer{
-    text-align: center;
-    margin: 0 auto;
+    text-align:center;
+    background-color: rgb(88, 84, 84);
+    height:50px;
+}
+footer p{
+    padding-top:10px;
+    color:white;
 }

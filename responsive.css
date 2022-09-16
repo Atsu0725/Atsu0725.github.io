@@ -1,35 +1,23 @@
-@media all and (max-width:600px){
-    :root{
-        --max--waidth:600px;
+/*タブレット向け*/
+
+@media all and (max-width:900px){
+    .work{
+        width:50%;
     }
-    .menuContainer{
+    .main-container h1{
+        font-size:40px;
+    }
+    
+}
+
+/*スマホ向け*/
+
+@media all and (max-width:400px){
+    .work{
         width:100%;
     }
-    .aboutCoffee{
-        width:100%;
-    }
-    .hiddenText{
-        width:100%;
-    }
-    .coffeeMenu{
-        width:100%;
-    }
-    .foodOther{
-        width:100%;
-    }
-    .explainCoffee li{
-        width:25%;
-    }
-    .ourStore{
-        width:100%;
-    }
-    .mainText{
-        font-size: 72px;
-    }
-    .explainCoffee li{
-        width:100%;
-    }
-    .hiddenText{
-        width:80%;
+    .main-container h1{
+        font-size:33px;
     }
 }
+
