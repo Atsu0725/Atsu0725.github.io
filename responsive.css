@@ -1,8 +1,8 @@
 /*タブレット向け*/
 
 @media all and (max-width:900px){
-    .work{
-        width:50%;
+    .header-container a{
+        margin-right:25px;
     }
     .main-container h1{
         font-size:40px;
@@ -13,11 +13,17 @@
 /*スマホ向け*/
 
 @media all and (max-width:400px){
-    .work{
-        width:100%;
+    .header-container a{
+        margin-right:10px;
     }
     .main-container h1{
-        font-size:33px;
+        font-size:28px;
+    }
+    .about__detail li{
+        width:100%;
+    }
+    .about__detail{
+        justify-content: center;
     }
 }
 
