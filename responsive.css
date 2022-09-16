@@ -19,11 +19,20 @@
     .main-container h1{
         font-size:28px;
     }
+    works{
+        justify-content: center;
+    }
+    .work p{
+        text-align: center;
+    }
     .about__detail li{
         width:100%;
     }
     .about__detail{
         justify-content: center;
+    }
+    .about__detail p{
+        text-align: center;
     }
 }
 

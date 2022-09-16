@@ -130,6 +130,9 @@ header{
 .about__detail p{
     text-align: left;
 }
+.about__site{
+    margin-bottom: 20px;
+}
 /*footer*/
 footer{
     text-align:center;
