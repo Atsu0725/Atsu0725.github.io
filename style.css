@@ -105,7 +105,7 @@ header{
     width:254px;
     color: black;
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .about{
     margin:0 auto;
@@ -132,7 +132,7 @@ header{
     text-align: left;
 }
 .about__site{
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 /*footer*/
 footer{
