@@ -31,8 +31,10 @@
     .work p{
         text-align: center;
     }
+
     .about__detail li{
         width:100%;
+        text-align: center;
     }
     .about__detail{
         justify-content: center;

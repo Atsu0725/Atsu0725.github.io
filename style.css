@@ -115,6 +115,7 @@ header{
     text-align: left;
     margin-bottom: 30px;
 }
+
 /*About*/
 .about{
     margin:0 auto;
@@ -136,7 +137,7 @@ header{
     flex-wrap: wrap;
 }
 .about__detail li{
-    width:30%;
+    width:45%;
 }
 .about__detail img{
     width:30%;
@@ -153,13 +154,24 @@ header{
 .about__site{
     margin-bottom: 40px;
 }
+.about__site ul{
+  margin: 0 auto;
+  width:85%;
+}
 .textColor{
     font-weight: bold;
- 
+}
+/*authorの設定*/
+.about__author div{
+    margin: 0 auto;
+    width:85%;
 }
 .about__author img{
     display: block;
     margin:0 auto;
+}
+.about__author p{
+    text-align: left;
 }
 
 /*footer*/
