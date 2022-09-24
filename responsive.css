@@ -22,6 +22,12 @@
     .works{
         justify-content: center;
     }
+    .work{
+        width:254px;
+    }
+    .work img{
+        height:150px;
+    }
     .work p{
         text-align: center;
     }

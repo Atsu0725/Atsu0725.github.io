@@ -5,6 +5,9 @@
     margin:0;
     padding:0;
 }
+ul{
+    list-style:none;
+}
 
 :root{
     --site-width:1140px;
@@ -78,8 +81,14 @@ header{
 .work-wrapper h1{
     display: inline-block;
     padding-bottom:10px;
-    border-bottom: solid 3px red;
+    border-bottom: solid 3px blue;
     margin-bottom: 40px;
+}
+.works h2{
+    display: inline-block;
+    padding-bottom:10px;
+    border-bottom: solid 3px rgb(0, 204, 255);
+    margin-bottom: 20px;
 }
 .works{
     margin:0 auto;
@@ -89,30 +98,36 @@ header{
     justify-content: space-between;
 }
 .work{
-    width:254px;
+    width:300px;
 }
 .work img{
     width:100%;
-    height:150px;
+    height:180px;
 }
-.work h2{
+.work h3{
     margin-top:30px;
     margin-bottom:30px;
     line-height:0;
     color: black;
 }
 .work p{
-    width:254px;
     color: black;
     text-align: left;
     margin-bottom: 30px;
 }
+/*About*/
 .about{
     margin:0 auto;
     margin-bottom:50px;
     display:flex;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+.about h2{
+    display: inline-block;
+    padding-bottom:10px;
+    border-bottom: solid 3px rgb(0, 204, 255);
+    margin-bottom: 20px;
 }
 .about__detail{
     list-style:none;
@@ -128,12 +143,25 @@ header{
     border-radius: 100%;
     border: solid 1px rgb(208, 208, 208);
 }
+.about__site li{
+    width:100%;
+    text-align: left;
+}
 .about__detail p{
     text-align: left;
 }
 .about__site{
     margin-bottom: 40px;
 }
+.textColor{
+    font-weight: bold;
+ 
+}
+.about__author img{
+    display: block;
+    margin:0 auto;
+}
+
 /*footer*/
 footer{
     text-align:center;
