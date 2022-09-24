@@ -99,11 +99,24 @@ header{
     justify-content: space-between;
 }
 .work{
-    width:300px;
+    width:320px;
+    background-color: rgb(240, 255, 255);
+    border:solid 1px  rgb(230, 255, 255);
+    border-radius: 10px;
+    padding-bottom:10px;
+    margin-bottom: 30px;
+}
+.work:hover{
+    background-color: rgb(200, 255, 255);
+    border:solid 1px  rgb(200, 255, 255);
+    transform:translateY(-5px);
+    box-shadow:0 0 5px black;
+    transition:0.3s;
 }
 .work img{
     width:100%;
-    height:180px;
+    height:200px;
+    border-radius: 10px;
 }
 .work h3{
     margin-top:30px;
@@ -112,9 +125,10 @@ header{
     color: black;
 }
 .work p{
+    margin:0 auto;
+    width:90%;
     color: black;
     text-align: left;
-    margin-bottom: 30px;
 }
 
 /*About*/
