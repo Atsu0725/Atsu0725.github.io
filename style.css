@@ -88,6 +88,7 @@ header{
     display: inline-block;
     padding-bottom:10px;
     border-bottom: solid 3px rgb(0, 204, 255);
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 .works{
