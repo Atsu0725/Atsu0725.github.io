@@ -7,17 +7,28 @@
     .main-container h1{
         font-size:40px;
     }
-    
+    .main-container h2{
+        font-size:30px;
+    }
 }
 
 /*スマホ向け*/
 
 @media all and (max-width:400px){
+    .top_icon h3{
+        font-size:16px;
+    }
+    .top_menu a{
+        font-size:14px;
+    }
     .header-container a{
         margin-right:15px;
     }
     .main-container h1{
         font-size:28px;
+    }
+    .main-container h2{
+        font-size:16px;
     }
     .works{
         justify-content: center;
@@ -31,7 +42,6 @@
     .work p{
         text-align: center;
     }
-
     .about__detail li{
         width:100%;
         text-align: center;
