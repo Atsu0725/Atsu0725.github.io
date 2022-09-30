@@ -65,12 +65,23 @@ header{
 }
 .main-container h1{
     font-size:50px;
-    margin-bottom:40px;
+    margin-bottom:5px;
     text-shadow: 3px 3px 5px black;
+}
+.main-container h2{
+    text-shadow:2px 2px 4px black;
+}
+.btn a{
+    text-decoration: none;
+    color:white;
+    text-shadow: 1px 1px 3px black;
+    margin-top:20px;
+    padding:10px 20px 10px 20px;
+    border: solid 1px white;
 }
 
 
-/*レッスン一覧のクラス*/
+/*WORKSのクラス*/
 .work-wrapper{
     margin-top:50px;
     max-width: var(--site-width);
@@ -132,9 +143,14 @@ header{
 }
 
 /*About*/
+.backColorAbout{
+    background-color: rgb(232, 232, 232);
+    border-top: solid 3px rgb(68, 68, 176);
+}
 .about{
+    max-width: var(--site-width);
     margin:0 auto;
-    margin-bottom:50px;
+    padding-bottom:20px;
     display:flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -142,8 +158,12 @@ header{
 .about h2{
     display: inline-block;
     padding-bottom:10px;
-    border-bottom: solid 3px rgb(68, 68, 176);
+    border-bottom: solid 1px rgb(68, 68, 176);
     margin-bottom: 20px;
+    margin-top:20px;
+}
+.about h3{
+    text-align: center;
 }
 .about__detail{
     list-style:none;
@@ -152,12 +172,33 @@ header{
     flex-wrap: wrap;
 }
 .about__detail li{
-    width:45%;
+    width:30%;
 }
 .about__detail img{
     width:30%;
     border-radius: 100%;
     border: solid 1px rgb(208, 208, 208);
+}
+
+/*authorの設定*/
+.about__author {
+    text-align: left;
+}
+.about__author div{
+    margin: 0 auto;
+    width:100%;
+}
+.about__author img{
+    display: block;
+    margin:0 auto;
+}
+.about__author p{
+    text-align: left;
+}
+
+/*本サイトについての設定*/
+.about__site {
+    text-align: left;
 }
 .about__site li{
     width:100%;
@@ -171,7 +212,7 @@ header{
 }
 .about__site ul{
   margin: 0 auto;
-  width:85%;
+  width:100%;
 }
 .textColor{
     font-weight: bold;
@@ -181,18 +222,6 @@ header{
     color:rgb(0, 162, 255);
 }
 
-/*authorの設定*/
-.about__author div{
-    margin: 0 auto;
-    width:85%;
-}
-.about__author img{
-    display: block;
-    margin:0 auto;
-}
-.about__author p{
-    text-align: left;
-}
 
 /*footer*/
 footer{
