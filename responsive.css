@@ -1,6 +1,18 @@
 /*タブレット向け*/
 
 @media all and (max-width:900px){
+    :root{
+        --site-width:850px;
+    }
+    .about{
+        max-width: var(--site-width);
+    }
+    .work-wrapper{
+        max-width: var(--site-width);
+    }
+    .about{
+        max-width: var(--site-width);
+    }
     .header-container a{
         margin-right:25px;
     }
@@ -41,6 +53,9 @@
     }
     .work p{
         text-align: center;
+    }
+    .about h2{
+        margin-top:80px;
     }
     .about__detail li{
         width:100%;
