@@ -30,6 +30,18 @@
     .main-container h2{
         font-size:16px;
     }
+    .outcomes{
+        justify-content: center;
+    }
+    .outcome{
+        width:254px;
+    }
+    .outcome img{
+        height:150px;
+    }
+    .outcome p{
+        text-align: center;
+    }
     .works{
         justify-content: center;
     }
