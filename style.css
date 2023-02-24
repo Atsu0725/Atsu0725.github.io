@@ -138,6 +138,7 @@ header{
     width:100%;
     height:200px;
     border-radius: 10px;
+    border:solid 1px  rgb(0, 0, 0, 0.1);
 }
 .work h3{
     margin-top:30px;
@@ -183,6 +184,7 @@ header{
 }
 .outcome_content{
     display: flex;
+    flex-wrap: wrap;
     height: 180px;
 }
 .oc_img{
@@ -194,7 +196,6 @@ header{
     width:60%;
     text-align: left;
 }
-
 .outcome img{
     width:auto;
     height:100%;
