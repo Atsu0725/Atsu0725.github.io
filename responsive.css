@@ -14,7 +14,7 @@
 
 /*スマホ向け*/
 
-@media all and (max-width:400px){
+@media all and (max-width:600px){
     .top_icon h3{
         font-size:16px;
     }
@@ -67,5 +67,29 @@
     .about__detail p{
         text-align: center;
     }
+    .outcome_content{
+        width:100%;
+        height: auto;
+    }
+    .oc_img{
+        width:100%;
+        height: auto;
+    }
+    .outcome img{
+        width: 100%;
+        height: auto;
+    }
+    .oc_title_explanation{
+        width:100%;
+        text-align: center;
+    }
+    .outcome h3{
+        width:95%;
+        margin-bottom:20px;
+    }
+    .outcome p{
+        width:100%;
+    }
+
 }
 
