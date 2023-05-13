@@ -116,7 +116,7 @@ header{
     margin-bottom:50px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 .work{
     width:320px;
